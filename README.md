@@ -10,7 +10,7 @@ This is a full-stack application that fetches and processes data from the TMDB (
 4. Run the application
 
 ## Technology Stack
-- Backend: Node.js, Express, MongoDB, Redis, TypeScript, Docker
+- Backend: Node.js, Express, MongoDB, Redis, TypeScript, Docker, Graphql
 - Frontend: React, TypeScript, Axios, IndexedDB
 
 ## Features
