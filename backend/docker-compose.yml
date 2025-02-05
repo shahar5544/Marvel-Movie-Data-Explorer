@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   movie-service:
     build: ./services/movie-service
@@ -13,17 +11,17 @@ services:
       - mongo
       - redis
 
-  user-service:
-    build: ./services/user-service
-    ports:
-      - "3001:3000"
-    environment:
-      - MONGO_URI=mongodb://mongo:27017/marvel
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
-    depends_on:
-      - mongo
-      - redis
+#  user-service:
+#    build: ./services/user-service
+#    ports:
+#      - "3001:3000"
+#    environment:
+#      - MONGO_URI=mongodb://mongo:27017/marvel
+#      - REDIS_HOST=redis
+#      - REDIS_PORT=6379
+#    depends_on:
+#      - mongo
+#      - redis
 
   mongo:
     image: mongo:4.4
